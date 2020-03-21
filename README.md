@@ -34,21 +34,21 @@ img_rgb = cv2.imread(img)
 cv2.imshow("Original Image ", img_rgb)
 ```
 This is original image
-![img](images/original.png)
+![img](https://github.com/Mitesh2499/sketching-with-python/blob/master/images/original.PNG)
 
 ```
 img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_BGR2GRAY)
 cv2.imshow("Grayscale Image", img_gray)
 ```
 This is Grayscale image
-![img](images/gray.png)
+![img](https://github.com/Mitesh2499/sketching-with-python/blob/master/images/gray.png)
 
 ```
 img_gray_inv = 255 - img_gray
 cv2.imshow("Invert Grayscale", img_gray_inv)
 ```
 This is inverted grayscale image
-![img](images/invert-gray.png)
+![img](https://github.com/Mitesh2499/sketching-with-python/blob/master/images/invert-gray.png)
 
 ```
 img_blur = cv2.GaussianBlur(img_gray_inv, ksize=(x, y),sigmaX=0, sigmaY=0)
@@ -56,14 +56,14 @@ cv2.imshow("Blur inverted Grayscale", img_blur)
 
 ```
 This is blur image
-![img](images/blur.png)
+![img](https://github.com/Mitesh2499/sketching-with-python/blob/master/images/blur.png)
 
 ```
 img_blend = dodgeV2(img_gray, img_blur)
 cv2.imshow("pencil sketch", img_blend)
 ```
 This is final sketch image
-![img](images/sketch.png)
+![img](https://github.com/Mitesh2499/sketching-with-python/blob/master/images/sketch.png)
 
 
 
